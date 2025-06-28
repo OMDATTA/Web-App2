@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation Engine</h1>
+        <div class="search-container">
+            <input type="text" id="movie-input" placeholder="Enter a movie title">
+            <button id="recommend-btn">Get Recommendations</button>
+        </div>
+        <div id="recommendations-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
